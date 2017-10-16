@@ -104,9 +104,9 @@
     <meta charset="utf-8">
 <div class="swiper-container c-gundong">
     <div class="swiper-wrapper">
-        <div class="swiper-slide" style="overflow:auto ">
+        <div class="swiper-slide stop-swiping" style="overflow-y: auto;padding-top: 0.61rem">
             <!--//第一屏-->
-            <div class="side1" id="p1" style="overflow: auto">
+            <div class="side1" id="p1" >
                 <div class="video">
                     <video  width="100%" height="100%" style="width: 100%;height:100%; object-fit: fill" autoplay="autoplay"  id="video1">
                         <source src="http://imgchuanxing.oss-cn-shenzhen.aliyuncs.com/attach/f6d1a4f12884b73033e044d9a5dd4bb9.mp4 " type="video/mp4" />
@@ -135,9 +135,9 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide  stop-swiping"style="overflow-y: auto;padding-top: 0.61rem">
             <!--//第二屏-->
-            <div class="side1" id="p2" style="overflow: auto">
+            <div class="side1" id="p2"  >
                 <div class="c-logo">
                     <img src="img/c-21.png" alt="">
                 </div>
@@ -188,9 +188,9 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide  stop-swiping"  style="overflow-y: auto;padding-top: 0.61rem">
             <!--//第三屏-->
-            <div class="side1" id="p3" style="overflow: auto">
+            <div class="side1" id="p3">
                 <div class="c-hei">
         <span>
             原创中式设计,彰显不凡品味
@@ -240,9 +240,9 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide  stop-swiping"style="overflow-y: auto;padding-top: 0.61rem">
             <!--//第四屏-->
-            <div class="side1" id="p4" style="overflow: auto">
+            <div class="side1" id="p4"  >
                 <div class="c-banner">
                     <img src="img/c-5.png" alt="">
                 </div>
@@ -278,9 +278,9 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide  stop-swiping"style="overflow-y: auto;padding-top: 0.61rem">
             <!--//第五屏-->
-            <div class="side1"id="p5" style="overflow: auto">
+            <div class="side1"id="p5"  >
                 <div class="c-banner c-banner1">
                     <img src="img/c-6.png" alt="">
                 </div>
@@ -334,9 +334,9 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide  stop-swiping" style="overflow-y: auto;padding-top: 0.61rem">
             <!--//第六屏-->
-            <div class="side1" id="p6" style="overflow: auto">
+            <div class="side1" id="p6"  >
                 <div class="jc-7">
                     <div class="jc-7-one">
                         <div class="jc-7-one-tx">
@@ -409,9 +409,9 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide  stop-swiping" style="overflow-y: auto;padding-top: 0.61rem">
             <!--//第七屏-->
-            <div class="side1" id="p7" style="overflow: auto">
+            <div class="side1" id="p7" >
                 <div class="c-hb">
                     <img src="img/jc-ren.jpg" alt="">
                     <img src="img/c-17.png" alt="">
@@ -459,8 +459,8 @@
     $(function () {
         var clientX=getBrowserInterfaceSize();
         console.log('浏览器'+clientX);
-        $('.swiper-slide').eq(0).scroll(function () {
-                var sTop=$('.swiper-slide').scrollTop();
+        $('.c-gundong .swiper-slide').eq(0).scroll(function () {
+                var sTop=$('.c-gundong .swiper-slide').scrollTop();
                 console.log('top'+sTop);
                 var cha=$('#p1').height()-clientX;
                 console.log('cha'+cha);
@@ -474,8 +474,8 @@
                     }
                 }
         });
-        $('.swiper-slide').eq(1).scroll(function () {
-            var sTop=$('.swiper-slide').scrollTop();
+        $('.c-gundong .swiper-slide').eq(1).scroll(function () {
+            var sTop=$('.c-gundong .swiper-slide').scrollTop();
             console.log('top'+sTop);
             var cha=$('#p2').height()-clientX;
             console.log('cha'+cha);
@@ -489,8 +489,8 @@
                 }
             }
         });
-        $('.swiper-slide').eq(2).scroll(function () {
-            var sTop=$('.swiper-slide').scrollTop();
+        $('.c-gundong .swiper-slide').eq(2).scroll(function () {
+            var sTop=$('.c-gundong .swiper-slide').scrollTop();
             console.log('top'+sTop);
             var cha=$('#p3').height()-clientX;
             console.log('cha'+cha);
@@ -504,8 +504,8 @@
                 }
             }
         });
-        $('.swiper-slide').eq(3).scroll(function () {
-            var sTop=$('.swiper-slide').scrollTop();
+        $('.c-gundong .swiper-slide').eq(3).scroll(function () {
+            var sTop=$('.c-gundong .swiper-slide').scrollTop();
             console.log('top'+sTop);
             var cha=$('#p4').height()-clientX;
             console.log('cha'+cha);
@@ -519,8 +519,8 @@
                 }
             }
         });
-        $('.swiper-slide').eq(4).scroll(function () {
-            var sTop=$('.swiper-slide').scrollTop();
+        $('.c-gundong .swiper-slide').eq(4).scroll(function () {
+            var sTop=$('.c-gundong .swiper-slide').scrollTop();
             console.log('top'+sTop);
             var cha=$('#p5').height()-clientX;
             console.log('cha'+cha);
@@ -534,8 +534,8 @@
                 }
             }
         });
-        $('.swiper-slide').eq(5).scroll(function () {
-            var sTop=$('.swiper-slide').scrollTop();
+        $('.c-gundong .swiper-slide').eq(5).scroll(function () {
+            var sTop=$('.c-gundong .swiper-slide').scrollTop();
             console.log('top'+sTop);
             var cha=$('#p6').height()-clientX;
             console.log('cha'+cha);
@@ -549,11 +549,12 @@
                 }
             }
         });
-        $('.swiper-slide').eq(6).scroll(function () {
-            var sTop=$('.swiper-slide').scrollTop();
+        $('.c-gundong .swiper-slide').eq(6).scroll(function () {
+            var sTop=$('.c-gundong .swiper-slide').scrollTop();
             console.log('top'+sTop);
             var cha=$('#p7').height()-clientX;
             console.log('cha'+cha);
+            console.log($(this))
             if(sTop*2<=cha){
                 $(this).addClass('stop-swiping');
             }else{
