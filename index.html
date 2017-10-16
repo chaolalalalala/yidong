@@ -50,8 +50,20 @@
             -webkit-align-items: center;
             align-items: center;
         }
-        .mui-active{
+
+        .mui-slider .mui-slider-group .mui-slider-item img{
+            width: 4.43rem;
+        }
+        /*.mui-active{
             width: 5.24rem!important;
+            margin-right: 0;
+        }*/
+        .mui-active{
+            margin-top: 0!important;
+        }
+        .mui-active img{
+            width: 5.27rem!important;
+            height:6.67rem!important;
             transition: all 0.5s;
         }
     </style>
@@ -109,24 +121,24 @@
                 <div class="mui-slider" style="padding-left: 0.6rem;height:7.04rem;">
                     <div class="mui-slider-group" style=>
                         <!--第一个内容区容器-->
-                        <div class="mui-slider-item mui-active" style="width: 4.47rem;margin:0 0.19rem">
+                        <div class="mui-slider-item mui-active" style="width: 4.9rem;margin-left:0.19rem;margin-right:0.19rem;margin-top: 0.6rem">
                             <!-- 具体内容 -->
                             <img src="img/c-3.png" alt="">
                         </div>
                         <!--第二个内容区-->
-                        <div class="mui-slider-item"  style="width: 4.47rem;margin:0 0.19rem">
+                        <div class="mui-slider-item"  style="width: 4.9rem;margin-right:0.19rem;margin-left:0.19rem;margin-top: 0.6rem">
                             <!-- 具体内容 -->
                             <img src="img/c-3.png" alt="">
                         </div>
-                        <div class="mui-slider-item"  style="width: 4.47rem;margin:0 0.19rem">
+                        <div class="mui-slider-item"  style="width: 4.9rem;margin-right:0.19rem;margin-left:0.19rem;margin-top: 0.6rem">
                             <!-- 具体内容 -->
                             <img src="img/c-3.png" alt="">
                         </div>
-                        <div class="mui-slider-item"  style="width: 4.47rem;margin:0 0.19rem">
+                        <div class="mui-slider-item"  style="width: 4.9rem;margin-right:0.19rem;margin-left:0.19rem;margin-top: 0.6rem">
                             <!-- 具体内容 -->
                             <img src="img/c-3.png" alt="">
                         </div>
-                        <div class="mui-slider-item"  style="width: 4.47rem;margin:0 0.19rem">
+                        <div class="mui-slider-item"  style="width: 4.9rem;margin-right:0.19rem;margin-left:0.19rem;margin-top: 0.6rem">
                             <!-- 具体内容 -->
                             <img src="img/c-3.png" alt="">
                         </div>
@@ -402,9 +414,7 @@
         autoplayDisableOnInteraction : false,
         autoplay: 3000
     })
-    var a=$(".c-lb2").css("width")
-    console.log(a)
-    var w=a.substring(0,3)
+
     var swiper = new Swiper('#c-lb1', {
         pagination: '.swiper-pagination',
         loop: true,
