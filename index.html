@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Swiper demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <!-- 启用 WebApp 全屏模式 -->
@@ -71,7 +71,13 @@
             -webkit-align-items: center;
             align-items: center;
         }
-
+        #loading
+        {
+            position:fixed;
+            top:40%;
+            left:45%;
+            z-index:999;
+        }
         .mui-slider .mui-slider-group .mui-slider-item img{
             width: 4.43rem!important;
         }
@@ -91,6 +97,11 @@
 </head>
 <body>
 <!-- Swiper -->
+<div id="loading" style="background: #000;opacity: 0.8">
+    <img src="img/2.gif" class="img-responsive" style="width: 50px;height:50px;display: block">
+</div>
+<pre name="code" class="css"></pre>
+    <meta charset="utf-8">
 <div class="swiper-container c-gundong">
     <div class="swiper-wrapper">
         <div class="swiper-slide" style="overflow:auto ">
@@ -98,7 +109,7 @@
             <div class="side1" id="p1" style="overflow: auto">
                 <div class="video">
                     <video  width="100%" height="100%" style="width: 100%;height:100%; object-fit: fill" autoplay="autoplay"  id="video1">
-                        <source src="http://www.zjzx168.com/mcsp/xcp.mp4 " type="video/mp4" />
+                        <source src="http://imgchuanxing.oss-cn-shenzhen.aliyuncs.com/attach/f6d1a4f12884b73033e044d9a5dd4bb9.mp4 " type="video/mp4" />
                     </video>
                 </div>
                 <div class="chuanxing">
@@ -112,7 +123,6 @@
                     盲目买，不懂买，去哪儿买这些统统抛开 <br>
                     把穿衣交给穿形把美好留给生活
                 </div>
-                <div class="kuai" style="width: 100%;height:2rem;"></div>
                 <div class="wx">
                     往下看了解我们的服务？
                 </div>
@@ -425,28 +435,130 @@
 <!-- Swiper JS -->
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/swiper.min.js"></script>
+<script>
+    $(function () {
+        var clientX=$(window).height();
+        console.log('浏览器'+clientX);
+        $('.swiper-slide').scroll(function () {
+                var sTop=$('.swiper-slide').scrollTop();
+                console.log('top'+sTop);
+                var cha=$('#p1').height()-clientX;
+                console.log('cha'+cha);
+                if(sTop*2<=cha){
+                    $(this).addClass('stop-swiping');
+                }else{
+                    if($(this).hasClass('stop-swiping')){
+                        $(this).removeClass('stop-swiping');
+                    }else{
+
+                    }
+                }
+        });
+        $('.swiper-slide').scroll(function () {
+            var sTop=$('.swiper-slide').scrollTop();
+            console.log('top'+sTop);
+            var cha=$('#p2').height()-clientX;
+            console.log('cha'+cha);
+            if(sTop*2<=cha){
+                $(this).addClass('stop-swiping');
+            }else{
+                if($(this).hasClass('stop-swiping')){
+                    $(this).removeClass('stop-swiping');
+                }else{
+
+                }
+            }
+        });
+        $('.swiper-slide').scroll(function () {
+            var sTop=$('.swiper-slide').scrollTop();
+            console.log('top'+sTop);
+            var cha=$('#p3').height()-clientX;
+            console.log('cha'+cha);
+            if(sTop*2<=cha){
+                $(this).addClass('stop-swiping');
+            }else{
+                if($(this).hasClass('stop-swiping')){
+                    $(this).removeClass('stop-swiping');
+                }else{
+
+                }
+            }
+        });
+        $('.swiper-slide').scroll(function () {
+            var sTop=$('.swiper-slide').scrollTop();
+            console.log('top'+sTop);
+            var cha=$('#p4').height()-clientX;
+            console.log('cha'+cha);
+            if(sTop*2<=cha){
+                $(this).addClass('stop-swiping');
+            }else{
+                if($(this).hasClass('stop-swiping')){
+                    $(this).removeClass('stop-swiping');
+                }else{
+
+                }
+            }
+        });
+        $('.swiper-slide').scroll(function () {
+            var sTop=$('.swiper-slide').scrollTop();
+            console.log('top'+sTop);
+            var cha=$('#p5').height()-clientX;
+            console.log('cha'+cha);
+            if(sTop*2<=cha){
+                $(this).addClass('stop-swiping');
+            }else{
+                if($(this).hasClass('stop-swiping')){
+                    $(this).removeClass('stop-swiping');
+                }else{
+
+                }
+            }
+        });
+        $('.swiper-slide').scroll(function () {
+            var sTop=$('.swiper-slide').scrollTop();
+            console.log('top'+sTop);
+            var cha=$('#p6').height()-clientX;
+            console.log('cha'+cha);
+            if(sTop*2<=cha){
+                $(this).addClass('stop-swiping');
+            }else{
+                if($(this).hasClass('stop-swiping')){
+                    $(this).removeClass('stop-swiping');
+                }else{
+
+                }
+            }
+        });
+        $('.swiper-slide').scroll(function () {
+            var sTop=$('.swiper-slide').scrollTop();
+            console.log('top'+sTop);
+            var cha=$('#p7').height()-clientX;
+            console.log('cha'+cha);
+            if(sTop*2<=cha){
+                $(this).addClass('stop-swiping');
+            }else{
+                if($(this).hasClass('stop-swiping')){
+                    $(this).removeClass('stop-swiping');
+                }else{
+
+                }
+            }
+        })
+    })
+</script>
 
 <!-- Initialize Swiper -->
 <script>
-    var h=$("#p1").css("height")
-    $(".gundong .swiper-wrapper .swiper-side").eq(1).css({height:h})
-    var swiper = new Swiper('.c-gundong', {
+
+
+
+   var swiper = new Swiper('.c-gundong', {
         nextButton: '.xiangxia',
         pagination: '.swiper-pagination',
         paginationClickable: true,
         direction: 'vertical',
-        /*onSlidePrevEnd: function(swiper){
-            swiper.unlockSwipeToNext();
-            if(swiper.activeIndex==0){
-                swiper.lockSwipeToPrev();
-            }
-        },
-        onSlideNextEnd: function(swiper){
-            swiper.unlockSwipeToPrev();
-            if(swiper.isEnd){
-                swiper.lockSwipeToNext();
-            }
-        }*/
+         noSwiping : true,
+       noSwipingClass : 'stop-swiping',
     });
     var swiper = new Swiper('#c-tp1', {
         pagination: '.swiper-pagination',
@@ -477,7 +589,11 @@
     $('html').css({overflow:"auto"});$('body').css({overflow:"auto"});
 </script>
 <script>
-
+$(window).load(function(){
+    //适当延迟隐藏，提高loading效果
+    //$('#loading_all').delay(1000).hide(0);
+    $('#loading').hide();
+});
 </script>
 </body>
 </html>
