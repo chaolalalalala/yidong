@@ -1,5 +1,6 @@
 body{
     /*position: relative;*/
+    -webkit-text-size-adjust: none;
 }
 .quan{
     width: 100%;
@@ -43,13 +44,29 @@ body{
     display: block;
 }
 .zi{
+    margin: 0 auto;
     width: 100%;
     height:auto;
-    font-family: "苹方 中等";
-    font-size: 0.26rem;
+    font-family: "微软雅黑";
+    font-weight: lighter;
+    font-size: 0.18rem;
     line-height: 0.5rem;
     color: #949494;
     text-align: center;
+    /*transform: scale(0.90);
+    transform-origin:0 0;
+
+    -ms-transform: scale(0.90);         !* IE 9 *!
+    -ms-transform-origin:0 0;       !* IE 9 *!
+
+    -webkit-transform: scale(0.90); !* Safari 和 Chrome *!
+    -webkit-transform-origin:0 0;   !* Safari 和 Chrome *!
+
+    -moz-transform: scale(0.90);        !* Firefox *!
+    -moz-transform-origin:0 0;      !* Firefox *!
+
+    -o-transform: scale(0.90);      !* Opera *!
+    -o-transform-origin:0 0;*/
 }
 .wx{
     width: 100%;
@@ -57,40 +74,144 @@ body{
     line-height: 0.26rem;
     font-size: 0.24rem;
     margin-top: 0.4rem;
-    font-family: "苹方 中等";
+    font-family: "微软雅黑";
+    font-weight: lighter;
     color: #949494;
     text-align: center;
 }
 @keyframes mymove
 {
-    0%{margin-top:0.19rem;}
-    100% {margin-top:0.35rem;}
+    0%{top:0.19rem;}
+    10%{
+        top:0.21rem;
+    }
+    20%{
+        top:0.23rem;
+    }
+   30%{
+        top:0.25rem;
+    }
+    40%{
+        top:0.27rem;
+    }
+    60%{
+        top:0.29rem;
+    }
+    70%{
+        top:0.31rem;
+    }
+    80%{
+        top:0.33rem;
+    }
+    80%{
+        top:0.34rem;
+    }
+    100% {top:0.35rem;}
 }
 
 @-moz-keyframes mymove /* Firefox */
 {
-    0% {margin-top:0.19rem;}
-100% {margin-top:0.35rem;}
+    0%{top:0.19rem;}
+    10%{
+        top:0.21rem;
+    }
+    20%{
+        top:0.23rem;
+    }
+    30%{
+        top:0.25rem;
+    }
+    40%{
+        top:0.27rem;
+    }
+    60%{
+        top:0.29rem;
+    }
+    70%{
+        top:0.31rem;
+    }
+    80%{
+        top:0.33rem;
+    }
+    80%{
+        top:0.34rem;
+    }
+    100% {top:0.35rem;}
 }
 
 @-webkit-keyframes mymove /* Safari 和 Chrome */
 {
-    0% {margin-top:0.19rem;}
-100% {margin-top:0.35rem;}
+    0%{top:0.19rem;}
+    10%{
+        top:0.21rem;
+    }
+    20%{
+        top:0.23rem;
+    }
+    30%{
+        top:0.25rem;
+    }
+    40%{
+        top:0.27rem;
+    }
+    60%{
+        top:0.29rem;
+    }
+    70%{
+        top:0.31rem;
+    }
+    80%{
+        top:0.33rem;
+    }
+    80%{
+        top:0.34rem;
+    }
+    100% {top:0.35rem;}
 }
 
 @-o-keyframes mymove /* Opera */
 {
-    0% {margin-top:0.19rem;}
-100% {margin-top:0.35rem;}
+    0%{top:0.19rem;}
+    10%{
+        top:0.21rem;
+    }
+    20%{
+        top:0.23rem;
+    }
+    30%{
+        top:0.25rem;
+    }
+    40%{
+        top:0.27rem;
+    }
+    60%{
+        top:0.29rem;
+    }
+    70%{
+        top:0.31rem;
+    }
+    80%{
+        top:0.33rem;
+    }
+    80%{
+        top:0.34rem;
+    }
+    100% {top:0.35rem;}
+}
+.c-xx{
+    width: 100%;
+    height:0.91rem;
+    position: relative;
 }
 .xiangxia{
-    animation:mymove 0.8s infinite;
     -webkit-animation:mymove 0.8s infinite;
     width: 0.48rem;
     height:0.46rem;
-    margin: 0 auto;
-    margin-top: 0.19rem;
+    position: absolute;
+    left: 0;
+    right:0;
+    margin: auto;
+    animation:mymove 0.8s infinite;
 }
 .xiangxia img{
     width: 100%;
@@ -112,20 +233,26 @@ body{
     width: 100%;
     height:1.25rem;
     color: #949494;
-    font-size: 0.24rem;
+    font-size: 0.18rem;
 }
 .c-zi span{
     width: 100%;
     height:auto;
     display: block;
     text-align: center;
-    font-size: 0.26rem;
+    font-size: 0.24rem;
+    font-family: "微软雅黑";
+    font-weight: lighter;
 }
 .c-zi span:nth-child(1){
     line-height: 0.28rem;
+    font-family: "微软雅黑";
+    font-weight: lighter;
 }
 .c-zi span:nth-child(2){
     line-height: 0.74rem;
+    font-family: "微软雅黑";
+    font-weight: lighter;
 }
 #c-lb1{
     width: 5.2rem;
@@ -172,6 +299,8 @@ body{
     text-align: center;
     margin-top: 0.25rem;
     margin-bottom: 0.7rem;
+    font-family: "微软雅黑";
+    font-weight: lighter;
 }
 .c-tp{
     width: 5.2rem;
@@ -319,7 +448,6 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    position: absolute;
 }
 .jc-7-one-tx .c-ds{
     width: 0.35rem;
@@ -380,6 +508,8 @@ body{
     display:-webkit-box;
     -webkit-box-orient:vertical;
     -webkit-line-clamp:3;
+    font-family: "微软雅黑";
+    font-weight: lighter;
 }
 .jc-7-pot{
     width: 1.24rem;

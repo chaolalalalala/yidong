@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/swiper.min.css">
-
+    <link rel="stylesheet" href="css/mui.css">
+    <link rel="stylesheet" href="css/mui.min.css">
+    <script src="js/mui.js"></script>
+    <script src="js/mui.min.js"></script>
     <!-- Demo styles -->
     <style>
         html, body {
@@ -46,6 +49,10 @@
             -ms-flex-align: center;
             -webkit-align-items: center;
             align-items: center;
+        }
+        .mui-active{
+            width: 5.24rem!important;
+            transition: all 0.5s;
         }
     </style>
 </head>
@@ -99,20 +106,41 @@
                     <span>萃取东方元素和精致工具,</span>
                     <span>演绎东方绅士的内敛气质和儒雅风度</span>
                 </div>
-                <div class="swiper-container" id="c-lb1" >
-                    <div class="swiper-wrapper c-lb2">
-                        <div class="swiper-slide c-lb"><a href="javascript:;"><img src="img/c-3.png" alt=""></a></div>
-                        <div class="swiper-slide c-lb"><a href="javascript:;"><img src="img/c-3.png" alt=""></a></div>
-                        <div class="swiper-slide c-lb"><a href="javascript:;"><img src="img/c-3.png" alt=""></a></div>
-                        <div class="swiper-slide c-lb"><a href="javascript:;"><img src="img/c-3.png" alt=""></a></div>
-                        <div class="swiper-slide c-lb"><a href="javascript:;"><img src="img/c-3.png" alt=""></a></div>
+                <div class="mui-slider" style="padding-left: 0.6rem;height:7.04rem;">
+                    <div class="mui-slider-group" style=>
+                        <!--第一个内容区容器-->
+                        <div class="mui-slider-item mui-active" style="width: 4.47rem;margin:0 0.19rem">
+                            <!-- 具体内容 -->
+                            <img src="img/c-3.png" alt="">
+                        </div>
+                        <!--第二个内容区-->
+                        <div class="mui-slider-item"  style="width: 4.47rem;margin:0 0.19rem">
+                            <!-- 具体内容 -->
+                            <img src="img/c-3.png" alt="">
+                        </div>
+                        <div class="mui-slider-item"  style="width: 4.47rem;margin:0 0.19rem">
+                            <!-- 具体内容 -->
+                            <img src="img/c-3.png" alt="">
+                        </div>
+                        <div class="mui-slider-item"  style="width: 4.47rem;margin:0 0.19rem">
+                            <!-- 具体内容 -->
+                            <img src="img/c-3.png" alt="">
+                        </div>
+                        <div class="mui-slider-item"  style="width: 4.47rem;margin:0 0.19rem">
+                            <!-- 具体内容 -->
+                            <img src="img/c-3.png" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="wx wx2">
                     往下看了解产品特点？
                 </div>
-                <div class="xiangxia">
-                    <img src="img/xiangxia.png" alt="">
+                <div class="c-xx">
+
+
+                    <div class="xiangxia" >
+                        <img src="img/xiangxia.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,8 +187,12 @@
                 <div class="wx wx1">
                     往下看了解我们的产品？
                 </div>
-                <div class="xiangxia">
-                    <img src="img/xiangxia.png" alt="">
+                <div class="c-xx">
+
+
+                    <div class="xiangxia" >
+                        <img src="img/xiangxia.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -193,8 +225,12 @@
                 <div class="wx wx1 wx3">
                     看看客户怎么评价我们？
                 </div>
-                <div class="xiangxia">
-                    <img src="img/xiangxia.png" alt="">
+                <div class="c-xx">
+
+
+                    <div class="xiangxia" >
+                        <img src="img/xiangxia.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -245,8 +281,12 @@
                 <div class="wx wx1 wx3">
                     往下看了解我们的产品？
                 </div>
-                <div class="xiangxia">
-                    <img src="img/xiangxia.png" alt="">
+                <div class="c-xx">
+
+
+                    <div class="xiangxia" >
+                        <img src="img/xiangxia.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -362,7 +402,9 @@
         autoplayDisableOnInteraction : false,
         autoplay: 3000
     })
-    var a=$(".kuan").css("width")
+    var a=$(".c-lb2").css("width")
+    console.log(a)
+    var w=a.substring(0,3)
     var swiper = new Swiper('#c-lb1', {
         pagination: '.swiper-pagination',
         loop: true,
