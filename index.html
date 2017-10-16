@@ -370,8 +370,16 @@
     myVid.muted=true;
 </script>
 <script>
-    var h=document.documentElement.clientHeight;
-    $(".side1").css({height:h})
+    var h=$(document).height();
+    $(".side1").css({height:h});
+    var Media=document.getElementById("video1");
+    Media.autoPlay;
+</script>
+<script>
+    function getInfo(){
+        s += " 屏幕可用工作区高度："+ window.screen.availHeight+"\n"
+        console.log(s)
+    }
 </script>
 </body>
 </html>
