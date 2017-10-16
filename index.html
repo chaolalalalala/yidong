@@ -1,444 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Swiper demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
-    <!-- Link Swiper's CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport"   content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/mui.css">
-    <link rel="stylesheet" href="css/mui.min.css">
-    <script src="js/mui.js"></script>
-    <script src="js/mui.min.js"></script>
-    <!-- Demo styles -->
-    <style>
-        html, body {
-            position: relative;
-            height: 100%;
-        }
-        body {
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color:#000;
-            margin: 0;
-            padding: 0;
-        }
-        .swiper-container {
-            width: 100%;
-            height: 100%;
-        }
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-
-        .mui-slider .mui-slider-group .mui-slider-item img{
-            width: 4.43rem!important;
-        }
-        /*.mui-active{
-            width: 5.24rem!important;
-            margin-right: 0;
-        }*/
-        .mui-active{
-            margin-top: 0!important;
-        }
-        .mui-slider .mui-slider-group .mui-active>img{
-            width: 5.27rem!important;
-            height:6.67rem!important;
-            transition: all 0.5s;
-        }
-    </style>
+    <link rel="stylesheet" href="css/jc-css.css">
 </head>
 <body>
-<!-- Swiper -->
-<div class="swiper-container c-gundong">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <!--//第一屏-->
-            <div class="side1" id="p1">
-                <div class="video">
-                    <video  width="100%" height="100%" style="width: 100%;height:100%; object-fit: fill" autoplay="autoplay"  id="video1">
-                        <source src="http://www.zjzx168.com/mcsp/xcp.mp4 " type="video/mp4" />
-                    </video>
-                </div>
-                <div class="chuanxing">
-                    <img src="img/c-20.png" alt="">
-                </div>
-                <div class="zi">
-                    以精致生活为前提的男性穿衣管家服务<br>
-                    私人搭配师一对一贴心服务 <br>
-                    男性形象诊断从根源解决你的服饰穿搭问题 <br>
-                    穿形新中式穿出儒雅穿出东方气度 <br>
-                    盲目买，不懂买，去哪儿买这些统统抛开 <br>
-                    把穿衣交给穿形把美好留给生活
-                </div>
-                <div class="wx">
-                    往下看了解我们的服务？
-                </div>
-                <div class="c-xx">
-
-
-                <div class="xiangxia" >
-                    <img src="img/xiangxia.png" alt="">
-                </div>
-                </div>
+    <div class="jc-7">
+        <div class="jc-7-one">
+            <div class="jc-7-one-tx">
+                <img src="img/c-1.jpg" alt="">
+            </div>
+            <span class="jc-name">笑江湖</span>
+            <div class="jc-7-ch">
+                大神
+            </div>
+            <span class="jc-7-name-ch">厦门搜狐网络-COO</span>
+            <div class="jc-7-js">
+                <p>非常感谢穿形给我提供的穿衣管家式 服务，非常感谢穿形给我提供的穿非常感谢穿形给我提供的穿衣管家式 服务，</p>
+            </div>
+            <div class="jc-7-pot">
+                <img src="img/c-1.jpg" alt="">
             </div>
         </div>
-        <div class="swiper-slide">
-            <!--//第二屏-->
-            <div class="side1" id="p2">
-                <div class="c-logo">
-                    <img src="img/c-21.png" alt="">
-                </div>
-                <div class="c-hei c-hei5">
-        <span>
-            东方绅士系列
-        </span>
-                </div>
-                <div class="c-zi">
-                    <span>萃取东方元素和精致工具,</span>
-                    <span>演绎东方绅士的内敛气质和儒雅风度</span>
-                </div>
-                <div class="mui-slider" style="padding-left: 0.6rem;height:7.04rem;">
-                    <div class="mui-slider-group" style=>
-                        <!--第一个内容区容器-->
-                        <div class="mui-slider-item mui-active" style="width: 4.9rem;margin-left:0.19rem;margin-right:0.19rem;margin-top: 0.6rem">
-                            <!-- 具体内容 -->
-                            <img src="img/c-3.png" alt="">
-                        </div>
-                        <!--第二个内容区-->
-                        <div class="mui-slider-item"  style="width: 4.9rem;margin-right:0.19rem;margin-left:0.19rem;margin-top: 0.6rem">
-                            <!-- 具体内容 -->
-                            <img src="img/c-3.png" alt="">
-                        </div>
-                        <div class="mui-slider-item"  style="width: 4.9rem;margin-right:0.19rem;margin-left:0.19rem;margin-top: 0.6rem">
-                            <!-- 具体内容 -->
-                            <img src="img/c-3.png" alt="">
-                        </div>
-                        <div class="mui-slider-item"  style="width: 4.9rem;margin-right:0.19rem;margin-left:0.19rem;margin-top: 0.6rem">
-                            <!-- 具体内容 -->
-                            <img src="img/c-3.png" alt="">
-                        </div>
-                        <div class="mui-slider-item"  style="width: 4.9rem;margin-right:0.19rem;margin-left:0.19rem;margin-top: 0.6rem">
-                            <!-- 具体内容 -->
-                            <img src="img/c-3.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="wx wx2">
-                    往下看了解产品特点？
-                </div>
-                <div class="c-xx">
-
-
-                    <div class="xiangxia" >
-                        <img src="img/xiangxia.png" alt="">
-                    </div>
-                </div>
+        <div class="jc-7-one">
+            <div class="jc-7-one-tx">
+                <img src="img/c-1.jpg" alt="">
+            </div>
+            <span class="jc-name">笑江湖</span>
+            <div class="jc-7-ch">
+                大神
+            </div>
+            <span class="jc-7-name-ch">厦门搜狐网络-COO</span>
+            <div class="jc-7-js">
+                <p>非常感谢穿形给我提供的穿衣管家式 服务，非常感谢穿形给我提供的穿非常感谢穿形给我提供的穿衣管家式 服务，</p>
+            </div>
+            <div class="jc-7-pot">
+                <img src="img/c-1.jpg" alt="">
             </div>
         </div>
-        <div class="swiper-slide">
-            <!--//第三屏-->
-            <div class="side1" id="p3">
-                <div class="c-hei">
-        <span>
-            原创中式设计,彰显不凡品味
-        </span>
-        <span>
-            穿出东方气度,穿出东方儒雅
-        </span>
-                </div>
-                <div class="c-heixia">
-                    穿形新中式 原创·定制 <br>
-                    独立设计开发贰拾款独特中式立领样式可选择 <br>
-                    量身定制,精致工艺，高贵品质
-                </div>
-                <div class="swiper-container" id="c-tp1">
-                    <div class="swiper-wrapper c-tp2">
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                        <div class="swiper-slide c-tp"><a href="javascript:;"><img src="img/c-4.png" alt=""></a></div>
-                    </div>
-                </div>
-                <div class="wx wx1">
-                    往下看了解我们的产品？
-                </div>
-                <div class="c-xx">
-
-
-                    <div class="xiangxia" >
-                        <img src="img/xiangxia.png" alt="">
-                    </div>
-                </div>
+        <div class="jc-7-one">
+            <div class="jc-7-one-tx">
+                <img src="img/c-1.jpg" alt="">
+            </div>
+            <span class="jc-name">笑江湖</span>
+            <div class="jc-7-ch">
+                大神
+            </div>
+            <span class="jc-7-name-ch">厦门搜狐网络-COO</span>
+            <div class="jc-7-js">
+                <p>非常感谢穿形给我提供的穿衣管家式 服务，非常感谢穿形给我提供的穿非常感谢穿形给我提供的穿衣管家式 服务，</p>
+            </div>
+            <div class="jc-7-pot">
+                <img src="img/c-1.jpg" alt="">
             </div>
         </div>
-        <div class="swiper-slide">
-            <!--//第四屏-->
-            <div class="side1" id="p4">
-                <div class="c-banner">
-                    <img src="img/c-5.png" alt="">
-                </div>
-                <div class="c-hei c-hei1">
-                    <span id="c-span">本质与金属,无须昂贵</span>
-                    <span>原创新中式设计,100%保证合身</span>
-                </div>
-                <div class="zi zi1">
-                    精选全棉高纱织面料<br>
-                    源自德民的高端缝纫线 <br>
-                    "珍惜瑰宝"白蝶贝纽扣 <br>
-                    一人一版,合身,合体 <br>
-                    走线流畅得体,独具匠心 <br>
-                    专属定制绣字,更具独特口味
-                </div>
-                <div class="c-tb">
-                    <ul>
-                        <li><a href="javascript:;"><img src="img/c-tb.png" alt=""></a></li>
-                        <li><a href="javascript:;"><img src="img/c-tb1.png" alt=""></a></li>
-                        <li><a href="javascript:;"><img src="img/c-tb2.png" alt=""></a></li>
-                        <li><a href="javascript:;"><img src="img/c-tb3.png" alt=""></a></li>
-                    </ul>
-                </div>
-                <div class="wx wx1 wx3">
-                    看看客户怎么评价我们？
-                </div>
-                <div class="c-xx">
-
-
-                    <div class="xiangxia" >
-                        <img src="img/xiangxia.png" alt="">
-                    </div>
-                </div>
+        <div class="jc-7-one">
+            <div class="jc-7-one-tx">
+                <img src="img/c-1.jpg" alt="">
             </div>
-        </div>
-        <div class="swiper-slide">
-            <!--//第五屏-->
-            <div class="side1"id="p5">
-                <div class="c-banner c-banner1">
-                    <img src="img/c-6.png" alt="">
-                </div>
-                <div class="c-hei c-hei1 c-hei2">
-                    <span id="c-span1">一对一私人搭配师,穿衣管家服务</span>
-                    <span>线上预约搭配师,线下免费上门体量</span>
-                </div>
-                <div class="zi zi1 zi2">
-                    专属搭配师个人色彩、风格、形象诊断<br>
-                    四季服饰搭配,严选您的适穿衣物 <br>
-                    真正的穿衣管家式服务,告别以往男士穿衣烦恼 <br>
-                    一键召唤您的专属搭配师,24小时贴心服务
-                </div>
-                <div class="c-tb c-tb11">
-                    <ul>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="img/c-7.png" alt="">
-                                <span>许大福</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="img/c-8.png" alt="">
-                                <span>陈怡静</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="img/c-9.png" alt="">
-                                <span>谢欢欢</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="img/c-10.png" alt="">
-                                <span>罗小琴</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="wx wx1 wx3">
-                    往下看了解我们的产品？
-                </div>
-                <div class="c-xx">
-
-
-                    <div class="xiangxia" >
-                        <img src="img/xiangxia.png" alt="">
-                    </div>
-                </div>
+            <span class="jc-name">笑江湖</span>
+            <div class="jc-7-ch">
+                大神
             </div>
-        </div>
-        <div class="swiper-slide">
-            <!--//第六屏-->
-            <div class="side1" id="p6">
-                <div class="jc-7">
-                    <div class="jc-7-one">
-                        <div class="jc-7-one-tx">
-                            <img src="img/c-7.png" alt="">
-                            <img src="img/c-16.png" alt="" class="c-ds">
-                        </div>
-                        <span class="jc-name">刘慈庆</span>
-                        <span class="jc-7-name-ch">厦门搜狐网络-COO</span>
-                        <div class="jc-7-js">
-                            <p>非常感谢穿形给我提供的穿衣管家式 服务，非常感谢穿形给我提供的穿非常感谢穿形给我提供的穿衣管家式 服务，</p>
-                        </div>
-                        <div class="jc-7-pot">
-                            <img src="img/c-12.png" alt="">
-                        </div>
-                    </div>
-                    <div class="jc-7-one">
-                        <div class="jc-7-one-tx">
-                            <img src="img/c-7.png" alt="">
-                            <img src="img/c-16.png" alt="" class="c-ds">
-                        </div>
-                        <span class="jc-name">刘慈庆</span>
-
-                        <span class="jc-7-name-ch">厦门搜狐网络-COO</span>
-                        <div class="jc-7-js">
-                            <p>非常感谢穿形给我提供的穿衣管家式 服务，非常感谢穿形给我提供的穿非常感谢穿形给我提供的穿衣管家式 服务，</p>
-                        </div>
-                        <div class="jc-7-pot">
-                            <img src="img/c-13.png" alt="">
-                        </div>
-                    </div>
-                    <div class="jc-7-one">
-                        <div class="jc-7-one-tx">
-                            <img src="img/c-7.png" alt="">
-                            <img src="img/c-16.png" alt="" class="c-ds">
-                        </div>
-                        <span class="jc-name">刘慈庆</span>
-
-                        <span class="jc-7-name-ch">厦门搜狐网络-COO</span>
-                        <div class="jc-7-js">
-                            <p>非常感谢穿形给我提供的穿衣管家式 服务，非常感谢穿形给我提供的穿非常感谢穿形给我提供的穿衣管家式 服务，</p>
-                        </div>
-                        <div class="jc-7-pot">
-                            <img src="img/c-14.png" alt="">
-                        </div>
-                    </div>
-                    <div class="jc-7-one js-7-one1">
-                        <div class="jc-7-one-tx">
-                            <img src="img/c-7.png" alt="">
-                            <img src="img/c-16.png" alt="" class="c-ds">
-                        </div>
-                        <span class="jc-name">刘慈庆</span>
-                        <span class="jc-7-name-ch">厦门搜狐网络-COO</span>
-                        <div class="jc-7-js">
-                            <p>非常感谢穿形给我提供的穿衣管家式 服务，非常感谢穿形给我提供的穿非常感谢穿形给我提供的穿衣管家式 服务，</p>
-                        </div>
-                        <div class="jc-7-pot">
-                            <img src="img/c-15.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="wx wx1 wx3 wx4">
-                    往下看了解我们的产品？
-                </div>
-                <div class="xiangxia">
-                    <img src="img/xiangxia.png" alt="">
-                </div>
+            <span class="jc-7-name-ch">厦门搜狐网络-COO</span>
+            <div class="jc-7-js">
+                <p>非常感谢穿形给我提供的穿衣管家式 服务，非常感谢穿形给我提供的穿非常感谢穿形给我提供的穿衣管家式 服务，</p>
             </div>
-        </div>
-        <div class="swiper-slide">
-            <!--//第七屏-->
-            <div class="side1" id="p7">
-                <div class="c-hb">
-                    <img src="img/jc-ren.jpg" alt="">
-                    <img src="img/c-17.png" alt="">
-                </div>
-                <div class="c-sh">
-                    <img src="img/c-18.png" alt="">
-                </div>
-                <div class="c-sy">
-                    <img src="img/c-19.png" alt="">
-                </div>
-                <div class="c-yuyue">
-                    <a href="http://www.baidu.com">
-                        立即预约上门量体
-                    </a>
-                </div>
+            <div class="jc-7-pot">
+                <img src="img/c-1.jpg" alt="">
             </div>
         </div>
     </div>
-    <!-- Add Pagination -->
-</div>
-<!-- Swiper JS -->
-<script src="js/jquery-2.1.4.js"></script>
-<script src="js/swiper.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper('.c-gundong', {
-        nextButton: '.xiangxia',
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        direction: 'vertical'
-    });
-    var swiper = new Swiper('#c-tp1', {
-        pagination: '.swiper-pagination',
-        loop: true,
-        autoplayDisableOnInteraction : false,
-        autoplay: 3000
-    })
-
-    var swiper = new Swiper('#c-lb1', {
-        pagination: '.swiper-pagination',
-        loop: true,
-        autoplayDisableOnInteraction : false
-    })
-</script>
-<script>
-    myVid=document.getElementById("video1");
-    myVid.muted=true;
-</script>
-<script>
-    var h=$(document).height();
-
-    var Media=document.getElementById("video1");
-    Media.autoPlay;
-</script>
-<script>
-    function getInfo(){
-        var s=""
-        s = window.screen.availHeight
-        console.log(s)
-        $(".side1").css({height:s+"px"});
-    }
-    getInfo()
-</script>
+    <div class="jc-8">
+        <div class="jc-8-head">
+            <img src="img/jc-ren.jpg" alt="">
+        </div>
+        <div class="jc-8-xk">
+            <img src="img/jc-xk.png" alt="">
+        </div>
+        <div class="jc-8-dk">
+            <img src="img/jc-dk.png" alt="">
+        </div>
+        <div class="jc-8-yy">
+            <a href="https:www.baidu.com"><img src="img/jc-yy_03.png" alt=""></a>
+        </div>
+    </div>
 </body>
 </html>
