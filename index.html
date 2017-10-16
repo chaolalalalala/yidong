@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Swiper demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="css/index.css">
@@ -92,7 +93,6 @@
                     盲目买，不懂买，去哪儿买这些统统抛开 <br>
                     把穿衣交给穿形把美好留给生活
                 </div>
-                <div class="kuai" style="width: 100%;height:3rem;"></div>
                 <div class="wx">
                     往下看了解我们的服务？
                 </div>
@@ -408,11 +408,25 @@
 
 <!-- Initialize Swiper -->
 <script>
+
+
     var swiper = new Swiper('.c-gundong', {
         nextButton: '.xiangxia',
         pagination: '.swiper-pagination',
         paginationClickable: true,
-        direction: 'vertical'
+        direction: 'vertical',
+        /*onSlidePrevEnd: function(swiper){
+            swiper.unlockSwipeToNext();
+            if(swiper.activeIndex==0){
+                swiper.lockSwipeToPrev();
+            }
+        },
+        onSlideNextEnd: function(swiper){
+            swiper.unlockSwipeToPrev();
+            if(swiper.isEnd){
+                swiper.lockSwipeToNext();
+            }
+        }*/
     });
     var swiper = new Swiper('#c-tp1', {
         pagination: '.swiper-pagination',
