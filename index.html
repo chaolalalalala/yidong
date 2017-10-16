@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/mui.min.css">
     <script src="js/mui.js"></script>
     <script src="js/mui.min.js"></script>
+
     <!-- Demo styles -->
     <style>
         html, body {
@@ -437,13 +438,9 @@
     Media.autoPlay;
 </script>
 <script>
-    /*function getInfo(){
-        var s=""
-        s = window.screen.availHeight
-        console.log(s)
-//        $(".side1").css({height:s+"px"});
-    }
-    getInfo()*/
+    $('html').css({height:"100%",overflow:"hidden"});
+    $('body').css({height:"100%",overflow:"hidden"});
+    $('html').css({overflow:"auto"});$('body').css({overflow:"auto"});
 </script>
 </body>
 </html>
