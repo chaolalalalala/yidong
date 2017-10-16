@@ -371,15 +371,18 @@
 </script>
 <script>
     var h=$(document).height();
-    $(".side1").css({height:h});
+
     var Media=document.getElementById("video1");
     Media.autoPlay;
 </script>
 <script>
     function getInfo(){
-        s += " 屏幕可用工作区高度："+ window.screen.availHeight+"\n"
+        var s=""
+        s = window.screen.availHeight
         console.log(s)
+        $(".side1").css({height:s+"px"});
     }
+    getInfo()
 </script>
 </body>
 </html>
