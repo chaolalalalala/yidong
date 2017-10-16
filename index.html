@@ -458,17 +458,15 @@
     var h=getBrowserInterfaceSize();
     $(function () {
         var clientX=getBrowserInterfaceSize();
-        console.log('浏览器'+clientX);
         $('.c-gundong .swiper-slide').eq(0).scroll(function () {
                 var sTop=$('.c-gundong .swiper-slide').scrollTop();
-                console.log('top'+sTop);
                 var cha=$('#p1').height()-clientX;
-                console.log('cha'+cha);
                 if(sTop*2<=cha){
                     $(this).addClass('stop-swiping');
                 }else{
                     if($(this).hasClass('stop-swiping')){
                         $(this).removeClass('stop-swiping');
+                        $(this).next().addClass('stop-swiping');
                     }else{
 
                     }
@@ -476,14 +474,14 @@
         });
         $('.c-gundong .swiper-slide').eq(1).scroll(function () {
             var sTop=$('.c-gundong .swiper-slide').scrollTop();
-            console.log('top'+sTop);
             var cha=$('#p2').height()-clientX;
-            console.log('cha'+cha);
             if(sTop*2<=cha){
                 $(this).addClass('stop-swiping');
             }else{
                 if($(this).hasClass('stop-swiping')){
                     $(this).removeClass('stop-swiping');
+                    $(this).prev().addClass('stop-swiping');
+                    $(this).next().addClass('stop-swiping');
                 }else{
 
                 }
@@ -491,20 +489,20 @@
         });
         $('.c-gundong .swiper-slide').eq(2).scroll(function () {
             var sTop=$('.c-gundong .swiper-slide').scrollTop();
-            console.log('top'+sTop);
             var cha=$('#p3').height()-clientX;
-            console.log('cha'+cha);
             if(sTop*2<=cha){
                 $(this).addClass('stop-swiping');
             }else{
                 if($(this).hasClass('stop-swiping')){
                     $(this).removeClass('stop-swiping');
+                    $(this).prev().addClass('stop-swiping');
+                    $(this).next().addClass('stop-swiping');
                 }else{
-
                 }
             }
         });
-        $('.c-gundong .swiper-slide').eq(3).scroll(function () {
+        $('.c-gundong .swiper-slide:nth-child(4)').scroll(function () {
+            console.log(111)
             var sTop=$('.c-gundong .swiper-slide').scrollTop();
             console.log('top'+sTop);
             var cha=$('#p4').height()-clientX;
@@ -514,12 +512,14 @@
             }else{
                 if($(this).hasClass('stop-swiping')){
                     $(this).removeClass('stop-swiping');
+                    $(this).prev().addClass('stop-swiping');
+                    $(this).next().addClass('stop-swiping');
                 }else{
 
                 }
             }
         });
-        $('.c-gundong .swiper-slide').eq(4).scroll(function () {
+        $('.c-gundong .swiper-slide:nth-child(5)').scroll(function () {
             var sTop=$('.c-gundong .swiper-slide').scrollTop();
             console.log('top'+sTop);
             var cha=$('#p5').height()-clientX;
@@ -529,12 +529,14 @@
             }else{
                 if($(this).hasClass('stop-swiping')){
                     $(this).removeClass('stop-swiping');
+                    $(this).prev().addClass('stop-swiping');
+                    $(this).next().addClass('stop-swiping');
                 }else{
 
                 }
             }
         });
-        $('.c-gundong .swiper-slide').eq(5).scroll(function () {
+        $('.c-gundong .swiper-slide:nth-child(6)').scroll(function () {
             var sTop=$('.c-gundong .swiper-slide').scrollTop();
             console.log('top'+sTop);
             var cha=$('#p6').height()-clientX;
@@ -544,22 +546,24 @@
             }else{
                 if($(this).hasClass('stop-swiping')){
                     $(this).removeClass('stop-swiping');
+                    $(this).prev().addClass('stop-swiping');
+                    $(this).next().addClass('stop-swiping');
                 }else{
 
                 }
             }
         });
-        $('.c-gundong .swiper-slide').eq(6).scroll(function () {
+        $('.c-gundong .swiper-slide:nth-child(7)').scroll(function () {
             var sTop=$('.c-gundong .swiper-slide').scrollTop();
             console.log('top'+sTop);
             var cha=$('#p7').height()-clientX;
             console.log('cha'+cha);
-            console.log($(this))
             if(sTop*2<=cha){
                 $(this).addClass('stop-swiping');
             }else{
                 if($(this).hasClass('stop-swiping')){
                     $(this).removeClass('stop-swiping');
+                    $(this).prev().addClass('stop-swiping');
                 }else{
 
                 }
