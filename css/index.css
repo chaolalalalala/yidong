@@ -54,7 +54,7 @@ html,body{
     font-family: "微软雅黑";
     font-size: 0.20rem;
     line-height: 0.4rem;
-    color: #353535;
+    color: #999999;
     text-align: center;
     /*transform: scale(0.90);
     transform-origin:0 0;
@@ -78,7 +78,7 @@ html,body{
     font-size: 0.18rem;
     margin-top: 0.2rem;
     font-family: "微软雅黑";
-    color: #949494;
+    color: #999999;
     text-align: center;
 }
 @keyframes mymove
@@ -234,7 +234,7 @@ html,body{
 .c-zi{
     width: 100%;
     height:auto;
-    color: #353535;
+    color: #999999;
     font-size: 0.18rem;
 }
 .c-zi span{
@@ -279,7 +279,7 @@ html,body{
     height:1.10rem;
     font-size: 0.28rem;
     color: #000000;
-    font-family: "苹方 粗体";
+    font-family: "微软雅黑";
     margin-top: 0.3rem;
 }
 .c-hei span{
@@ -292,7 +292,7 @@ html,body{
 .c-heixia{
     width: 100%;
     height:1.2rem;
-    color: #353535;
+    color: #999999;
     line-height: 0.4rem;
     font-size: 0.24rem;
     text-align: center;
@@ -411,7 +411,8 @@ html,body{
     text-align: center;
     margin-top: 0.19rem;
     display: block;
-    color: #919191;
+    font-family: "微软雅黑";
+    color: #999999;
 }
 
 /*第7频*/
@@ -507,6 +508,7 @@ html,body{
     -webkit-box-orient:vertical;
     -webkit-line-clamp:3;
     font-family: "微软雅黑";
+    color: #666;
 }
 .jc-7-pot{
     width: 1.24rem;
