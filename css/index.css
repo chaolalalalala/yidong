@@ -43,6 +43,7 @@ html,body{
     width: 100%;
     height:100%;
     display: block;
+    z-index: 999;
 }
 .c-bofang{
     position: absolute;
@@ -54,6 +55,7 @@ html,body{
     width: 0.87rem;
     height:0.87rem;
     display: block;
+    z-index: 9999;
 }
 .chuanxing{
     height:1.27rem;
@@ -223,12 +225,13 @@ html,body{
 .c-xx{
     width: 100%;
     height:0.91rem;
-    position: fixed;
+    position: absolute;
     left: 0;
     right:0;
     bottom: 0;
     margin: auto;
 }
+
 .xiangxia{
     -webkit-animation:mymove 0.8s infinite;
     width: 0.48rem;
