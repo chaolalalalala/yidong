@@ -39,8 +39,8 @@ html,body{
     height:1.27rem;
     width: 2.32rem;
     margin: 0 auto;
-    margin-top: 0.44rem;
-    margin-bottom: 0.38rem;
+    margin-top: 0.14rem;
+    margin-bottom: 0.18rem;
 }
 .chuanxing img{
     width: 100%;
@@ -54,8 +54,8 @@ html,body{
     font-family: "微软雅黑";
     font-weight: lighter;
     font-size: 0.18rem;
-    line-height: 0.5rem;
-    color: #949494;
+    line-height: 0.4rem;
+    color: #353535;
     text-align: center;
     /*transform: scale(0.90);
     transform-origin:0 0;
@@ -77,7 +77,7 @@ html,body{
     height:0.26rem;
     line-height: 0.26rem;
     font-size: 0.24rem;
-    margin-top: 0.4rem;
+    margin-top: 0.2rem;
     font-family: "微软雅黑";
     font-weight: lighter;
     color: #949494;
@@ -226,7 +226,7 @@ html,body{
     width: 0.9rem;
     height:0.26rem;
     margin: 0 auto;
-    margin-top: 0.41rem;
+    margin-top: 0.25rem;
 }
 .c-logo img{
     width: 100%;
@@ -235,8 +235,8 @@ html,body{
 }
 .c-zi{
     width: 100%;
-    height:1.25rem;
-    color: #949494;
+    height:auto;
+    color: #353535;
     font-size: 0.18rem;
 }
 .c-zi span{
@@ -254,7 +254,7 @@ html,body{
     font-weight: lighter;
 }
 .c-zi span:nth-child(2){
-    line-height: 0.74rem;
+    line-height: 0.44rem;
     font-family: "微软雅黑";
     font-weight: lighter;
 }
@@ -285,7 +285,7 @@ html,body{
     font-size: 0.28rem;
     color: #000000;
     font-family: "苹方 粗体";
-    margin-top: 0.58rem;
+    margin-top: 0.3rem;
 }
 .c-hei span{
     line-height: 0.55rem;
@@ -378,7 +378,7 @@ html,body{
 }
 .zi1{
     margin-top: 0.37rem;
-    line-height: 0.46rem;
+    line-height: 0.42rem;
 }
 #c-span{
     line-height: 0.3rem;
@@ -430,7 +430,7 @@ html,body{
     width: 100%;
     height: 1.84rem;
     overflow: hidden;
-    margin-bottom: 0.62rem;
+    margin-bottom: 0.2rem;
     position: relative;
 }
 .js-7-one1{
@@ -525,7 +525,7 @@ html,body{
 .jc-7-pot img {
     width: 100%;
     height: 100%;
-    position: absolute;
+    display: block;
 }
 
 /*第8频*/
