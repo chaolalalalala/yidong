@@ -87,11 +87,18 @@
         }*/
         .mui-active{
             margin-top: 0!important;
+
         }
         .mui-slider .mui-slider-group .mui-active>img{
             width: 5.27rem!important;
             height:6.67rem!important;
             transition: all 0.5s;
+            border-radius: 0.4rem;
+            border:#666 0px solid;
+            filter:progid:DXImageTransform.Microsoft.Shadow(color=#666,strength=4);/*ie*/
+            -moz-box-shadow: 6px 6px 20px #666;/*firefox*/
+            -webkit-box-shadow: 6px 6px 20px #666;/*safari或chrome*/
+            box-shadow:6px 6px 10px #666;/*opera或ie9*/
         }
     </style>
 </head>
@@ -108,9 +115,12 @@
             <!--//第一屏-->
             <div class="side1" id="p1" >
                 <div class="video">
+
                     <video  width="100%" height="100%" style="width: 100%;height:100%; object-fit: fill" autoplay="autoplay"  id="video1">
                         <source src="http://imgchuanxing.oss-cn-shenzhen.aliyuncs.com/attach/f6d1a4f12884b73033e044d9a5dd4bb9.mp4 " type="video/mp4" />
                     </video>
+                    <img src="img/c-55.png" alt="" class="c-beijing">
+                    <img src="img/c-56.png" alt="" class="c-bofang">
                 </div>
                 <div class="chuanxing">
                     <img src="img/c-20.png" alt="">
@@ -176,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="wx wx2" style="margin-top: 0rem">
+                <div class="wx wx2" style="margin-top: -0.1rem">
                     往下看了解产品特点？
                 </div>
                 <div class="c-xx">
@@ -619,6 +629,10 @@ $(window).load(function(){
     //$('#loading_all').delay(1000).hide(0);
     $('#loading').hide();
 });
+    $(".c-bofang").click(function () {
+        $(".c-bofang").hide();
+        $(".c-beijing").hide();
+    })
 </script>
 </body>
 </html>

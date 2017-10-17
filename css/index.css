@@ -34,13 +34,33 @@ html,body{
 .video{
     width: 100%;
     height:4.6rem;
+    position: relative;
+}
+.c-beijing{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height:100%;
+    display: block;
+}
+.c-bofang{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    width: 0.87rem;
+    height:0.87rem;
+    display: block;
 }
 .chuanxing{
     height:1.27rem;
     width: 2.32rem;
     margin: 0 auto;
     margin-top: 0.14rem;
-    margin-bottom: 0.18rem;
+    margin-bottom: 0.28rem;
 }
 .chuanxing img{
     width: 100%;
@@ -52,7 +72,7 @@ html,body{
     width: 100%;
     height:auto;
     font-family: "微软雅黑";
-    font-size: 0.20rem;
+    font-size: 0.22rem;
     line-height: 0.4rem;
     color: #999999;
     text-align: center;
@@ -76,7 +96,7 @@ html,body{
     height:0.26rem;
     line-height: 0.26rem;
     font-size: 0.18rem;
-    margin-top: 0.2rem;
+    margin-top: 0.28rem;
     font-family: "微软雅黑";
     color: #999999;
     text-align: center;
@@ -203,7 +223,11 @@ html,body{
 .c-xx{
     width: 100%;
     height:0.91rem;
-    position: relative;
+    position: fixed;
+    left: 0;
+    right:0;
+    bottom: 0;
+    margin: auto;
 }
 .xiangxia{
     -webkit-animation:mymove 0.8s infinite;
@@ -235,7 +259,8 @@ html,body{
     width: 100%;
     height:auto;
     color: #999999;
-    font-size: 0.18rem;
+    font-size: 0.20rem;
+    margin-bottom: 0.2rem;
 }
 .c-zi span{
     width: 100%;
@@ -248,10 +273,12 @@ html,body{
 .c-zi span:nth-child(1){
     line-height: 0.28rem;
     font-family: "微软雅黑";
+    font-size: 0.22rem;
 }
 .c-zi span:nth-child(2){
     line-height: 0.44rem;
     font-family: "微软雅黑";
+    font-size: 0.22rem;
 }
 #c-lb1{
     width: 5.2rem;
@@ -281,6 +308,7 @@ html,body{
     color: #000000;
     font-family: "微软雅黑";
     margin-top: 0.3rem;
+    font-weight: bold;
 }
 .c-hei span{
     line-height: 0.55rem;
@@ -294,7 +322,7 @@ html,body{
     height:1.2rem;
     color: #999999;
     line-height: 0.4rem;
-    font-size: 0.24rem;
+    font-size: 0.22rem;
     text-align: center;
     margin-top: 0.25rem;
     margin-bottom: 0.7rem;
@@ -406,7 +434,7 @@ html,body{
 .c-tb11 ul li a span{
     width: 100%;
     height:0.24rem;
-    font-size: 0.24rem;
+    font-size: 0.18rem;
     line-height: 0.24rem;
     text-align: center;
     margin-top: 0.19rem;
@@ -504,6 +532,7 @@ html,body{
     line-height: 0.34rem;
     overflow:hidden;
     text-overflow:ellipsis;
+    text-align: left;
     display:-webkit-box;
     -webkit-box-orient:vertical;
     -webkit-line-clamp:3;
