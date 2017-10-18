@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Swiper demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- 启用 WebApp 全屏模式 -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
@@ -31,9 +31,13 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/mui.css">
     <link rel="stylesheet" href="css/mui.min.css">
+
     <script src="js/mui.js"></script>
     <script src="js/mui.min.js"></script>
 
+    <script>
+
+    </script>
     <!-- Demo styles -->
     <style>
         html, body {
@@ -116,7 +120,7 @@
             <div class="side1" id="p1" >
                 <div class="video">
 
-                    <video  width="100%" height="100%" style="width: 100%;height:100%; object-fit: fill" autoplay="autoplay"  id="video1">
+                    <video  width="100%" height="100%" style="width: 100%;height:100%; object-fit: fill"   id="video1">
                         <source src="http://imgchuanxing.oss-cn-shenzhen.aliyuncs.com/attach/f6d1a4f12884b73033e044d9a5dd4bb9.mp4 " type="video/mp4" />
                     </video>
                     <img src="img/c-55.png" alt="" class="c-beijing">
@@ -629,9 +633,11 @@ $(window).load(function(){
     //$('#loading_all').delay(1000).hide(0);
     $('#loading').hide();
 });
+var myVideo=document.getElementById("video1");
     $(".c-bofang").click(function () {
         $(".c-bofang").hide();
         $(".c-beijing").hide();
+        myVideo.play()
     })
 </script>
 </body>
